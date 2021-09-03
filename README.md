@@ -18,21 +18,21 @@ You can download the pre-trained YOLO v3 weights file from this [link](https://p
  
  Provided all the files are in the current directory, the below command will apply object detection and lane detection on the input video
  
- Run Code
+# Run Code
 
  `$ python lanes.py --video 1.mp4 --config yolov3.cfg --weights yolov3.weights --classes yolov3.txt`
 
-after --video, specify the video.mp4 name. **Imp:** Make sure that the video resolution is 720p for best results
+* after --video, specify the video.mp4 name. **Imp:** Make sure that the video resolution is 720p for best results
 
-you can stop displaying the confidence on each object by removing ` +" "+str(round(confidence,2)) ` from line 37
+* you can stop displaying the confidence on each object by removing ` +" "+str(round(confidence,2)) ` from line 37
 
-while the code is running, you can stop it and save the video to a folder called "test" by pressing the button `q` at anytime
+* while the code is running, you can stop it and save the video to a folder called "test" by pressing the button `q` at anytime
 
-you can choose the number of frames per second in the output video by modifying line 205
+* you can choose the number of frames per second in the output video by modifying line 205
 
-This is what the output will look like:
+## This is what the output will look like:
 
-![Demo](test/demo.gif)
+![Demo](tests/demo.gif)
 
 ## View Presentation about this Project on:
 https://www.youtube.com/watch?v=Ak420CoDJ9A&t=2s
